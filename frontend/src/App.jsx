@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import Login from './pages/LoginPage';
 import Register from './pages/RegisterPage';
 import Home from './pages/HomePage';
-import NotFound from './pages/NotFound';
 import CreateEvent from './pages/CreateEventPage';
 import AccountInfo from './pages/AccountInfo';
 import AppliedEvents from './pages/AppliedEvents';
