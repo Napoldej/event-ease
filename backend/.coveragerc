@@ -1,0 +1,66 @@
+[run]
+
+branch = True 
+
+cover_pylib = False
+
+
+include = api/*
+    
+omit =
+    #manage.py
+    manage.py
+    
+    #schema file
+    api/views/schemas/*
+    
+    #view file
+    api/views/bookmarks.py
+    api/views/comment.py
+    api/views/event.py
+    api/views/like.py
+    api/views/modules.py
+    api/views/organizer.py
+    api/views/ticket.py
+    api/views/user.py
+    #mock data folder
+    stub_api/*
+
+    */settings.py
+    */urls.py
+    backend/*
+
+    #backup data file
+    backup.json
+
+    */views/modules.py
+    */views/schemas.py
+
+    # package file
+    api/__init__.py
+    api/*/__init__.py
+    api/utils.py
+    api/*/*/__init__.py
+
+    #test file
+    */tests/*
+
+    # admin configuration
+    */admin.py
+    
+    # app configurations
+    */apps.py 
+
+    #migrations data
+    */migrations/* 
+
+
+[report]
+# dont test __str__ and __repr__ methods
+exclude_lines =
+    def __str__
+    def __repr__
+    pass
+
+[html]
+directory = htmlcov
